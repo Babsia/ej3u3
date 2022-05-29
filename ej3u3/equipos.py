@@ -6,5 +6,6 @@ class equipo:
         self.__nombre=nom
         self.__ciudad=city
         self.__contratos=[]
-        
+    def getname(self):
+        return self.__nombre  
 

@@ -30,3 +30,12 @@ class manejadorE:
             e=equipo(fila[0],fila[1])
             self.agregarequipo(e)
     
+    def buscarequipo(self,name):
+        i = 0
+        while i < len(self.__equipos) and self.__equipos[i].getname() != name:
+            i += 1
+        if i == len(self.__equipos):
+            i = -1
+        return i
+    def extraerequipo(self,indice):
+        return self.__equipos[indice]
